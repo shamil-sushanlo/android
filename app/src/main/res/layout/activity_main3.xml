@@ -1,0 +1,60 @@
+<!-- res/layout/activity_travel_details.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Изображение путешествия -->
+
+    <!-- Название путешествия -->
+
+    <!-- Описание путешествия -->
+
+    <!-- Даты путешествия -->
+
+    <ImageView
+        android:id="@+id/iv_travel_image"
+        android:layout_width="302dp"
+        android:layout_height="243dp"
+        android:contentDescription="Изображение путешествия"
+        android:scaleType="centerCrop"
+        android:src="@tools:sample/avatars"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <TextView
+        android:id="@+id/tv_travel_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Название путешествия"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <TextView
+        android:id="@+id/tv_travel_description"
+        android:layout_width="323dp"
+        android:layout_height="109dp"
+        android:lineSpacingExtra="4dp"
+        android:text="Здесь находится полное описание путешествия. Важные детали могут быть выделены жирным шрифтом или курсивом."
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="332dp" />
+
+    <TextView
+        android:id="@+id/tv_travel_dates"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="С 01.06.2023 по 10.06.2023"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="311dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

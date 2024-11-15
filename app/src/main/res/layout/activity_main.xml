@@ -1,0 +1,78 @@
+<!-- res/layout/activity_travel_overview.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Заголовок приложения -->
+    <TextView
+        android:id="@+id/tv_app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Мои путешествия"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Прокручиваемый список путешествий -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Пример путешествия -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp">
+
+                <!-- Фон: изображение путешествия -->
+                <ImageView
+                    android:id="@+id/iv_travel_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@tools:sample/avatars" />
+
+                <!-- Полупрозрачный текстовый блок -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:background="#80000000">
+
+                    <TextView
+                        android:id="@+id/tv_travel_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Париж"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_travel_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Июнь 2023"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Другие путешествия можно добавить динамически -->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

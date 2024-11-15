@@ -1,0 +1,90 @@
+<!-- res/layout/activity_add_travel.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Поле для загрузки изображения -->
+        <ImageView
+            android:id="@+id/iv_upload_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerInside"
+            android:src="@tools:sample/avatars"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="Добавить изображение" />
+
+        <!-- Поле для названия путешествия -->
+        <EditText
+            android:id="@+id/et_travel_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Название путешествия"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@android:color/white"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Поле для описания путешествия -->
+        <EditText
+            android:id="@+id/et_travel_description"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="Описание путешествия"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:padding="12dp"
+            android:background="@android:color/white"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Выбор даты начала путешествия -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дата начала:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <DatePicker
+            android:id="@+id/dp_start_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Выбор даты окончания путешествия -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дата окончания:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <DatePicker
+            android:id="@+id/dp_end_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Кнопка сохранения -->
+        <Button
+            android:id="@+id/btn_save_travel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сохранить"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:paddingVertical="12dp" />
+    </LinearLayout>
+</ScrollView>
